@@ -26,19 +26,5 @@
 //  document.write(`<div>`);
 //  //document.write(`<p>the admin for team ${}</p>`)
 //  } 
-function showInfo(us="Un", ag="Un", rt=0, show="yes",  ...sk){
-   document.write(`<div>`);
-   document.write(`<h2>welcom ${us}</h2>`);
-   document.write(`<p>age ${ag}</p>`);
-   document.write(`<p>hour rate :${rt}</p>`);
-   if (show ==="yes"){
-      if(sk.length > 0){
- document.write(`<p> skills: ${sk.join(" | ")}</p>`);
-   }else{
- document.write(`<p> skills: no skills</p>`);  
- }
-}else{
-   document.write(`<p> skills is hidden</p>`);  }
-   document.write(`</div>`);}
 
-showInfo("mad" ,30 ,20,"no","html","css","javascript",);
+
