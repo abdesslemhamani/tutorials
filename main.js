@@ -43,3 +43,17 @@
 // .join(" ");
 // console.log(justnum);
 
+let theBiggest = ["Bla","propagandi","other","aaa","battery","test-doubble-tets"];
+let longest = theBiggest.reduce(function(acc,current){
+    return acc.length>current.length ? acc : current;
+})
+console.log(longest);
+let removeChars=["s","@","@","a","L","@","@","A","M","@","O"];
+let letter = removeChars.filter(function(ele){
+    return ! ele.startsWith("@")
+})
+
+.reduce(function(acc,current){
+    return `${acc}${current}`;
+})
+console.log(letter)
