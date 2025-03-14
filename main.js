@@ -25,12 +25,21 @@
 //  document.write(`<div> we have ${myAdmins.slice(0,4)} admins</div>`)
 //  document.write(`<div>`);
 //  //document.write(`<p>the admin for team ${}</p>`)
-//  } 
+// //  } 
 
 
-let sentence = "I Love Foood Code Too Playing Much";
-let smallWords =sentence.split(" ").filter(function(ele){
-return ele.length<=4;
-})
-.join(" ");
-console.log(smallWords)
+// let sentence = "I Love Foood Code Too Playing Much";
+// let smallWords =sentence.split(" ").filter(function(ele){
+// return ele.length<=4;
+// })
+// .join(" ");
+// console.log(smallWords)
+// let mix ="A13BS2ZX";
+// let justnum = mix.split("").filter(function(ele){
+//     return !isNaN(parseInt(ele))
+// }).map(function(ele){
+//     return ele*ele;
+// })
+// .join(" ");
+// console.log(justnum);
+
