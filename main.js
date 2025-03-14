@@ -28,3 +28,9 @@
 //  } 
 
 
+let sentence = "I Love Foood Code Too Playing Much";
+let smallWords =sentence.split(" ").filter(function(ele){
+return ele.length<=4;
+})
+.join(" ");
+console.log(smallWords)
