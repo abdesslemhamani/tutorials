@@ -43,17 +43,25 @@
 // .join(" ");
 // console.log(justnum);
 
-let theBiggest = ["Bla","propagandi","other","aaa","battery","test-doubble-tets"];
-let longest = theBiggest.reduce(function(acc,current){
-    return acc.length>current.length ? acc : current;
-})
-console.log(longest);
-let removeChars=["s","@","@","a","L","@","@","A","M","@","O"];
-let letter = removeChars.filter(function(ele){
-    return ! ele.startsWith("@")
-})
+// let theBiggest = ["Bla","propagandi","other","aaa","battery","test-doubble-tets"];
+// let longest = theBiggest.reduce(function(acc,current){
+//     return acc.length>current.length ? acc : current;
+// })
+// console.log(longest);
+// let removeChars=["s","@","@","a","L","@","@","A","M","@","O"];
+// let letter = removeChars.filter(function(ele){
+//     return ! ele.startsWith("@")
+// })
 
-.reduce(function(acc,current){
-    return `${acc}${current}`;
-})
-console.log(letter)
+// .reduce(function(acc,current){
+//     return `${acc}${current}`;
+// })
+// console.log(letter)
+let user = {
+    age : 38,
+    ageIndays: function(){
+        return this.age * 365;
+    },
+} ;
+console.log(user.age)
+console.log(user.ageIndays());
