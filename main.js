@@ -56,12 +56,20 @@
 // .reduce(function(acc,current){
 //     return `${acc}${current}`;
 // })
-// console.log(letter)
-let user = {
-    age : 38,
-    ageIndays: function(){
-        return this.age * 365;
-    },
-} ;
-console.log(user.age)
-console.log(user.ageIndays());
+// // console.log(letter)
+// let user = {
+//     age : 38,
+//     ageIndays: function(){
+//         return this.age * 365;
+//     },
+// } ;
+// console.log(user.age)
+// console.log(user.ageIndays());
+
+
+//tuturial
+
+let myIdelement = document.getElementById("my-div");
+let mytagelements = document.getElementsByTagName("p");
+console.log(myIdelement)
+console.log(mytagelements)
