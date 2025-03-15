@@ -79,24 +79,43 @@
 // console.log(myQueryelement[1])
 
 //tuturial 2
-let myElement = document.querySelector(".js");
-console.log(myElement.innerHTML);
-console.log(myElement.textContent);
+// let myElement = document.querySelector(".js");
+// console.log(myElement.innerHTML);
+// console.log(myElement.textContent);
 
 
-myElement.innerHTML = "text form <span> main.js</span> file"
-myElement.textContent = "text form <span> main.js</span> file"
+// myElement.innerHTML = "text form <span> main.js</span> file"
+// myElement.textContent = "text form <span> main.js</span> file"
 
 
 
-document.images[0].src= "https://google.com";
-document.images[0].alt="alternate";
-document.images[0].title="picture";
-document.images[0].id="pic";
-document.images[0].className="img";
+// document.images[0].src= "https://google.com";
+// document.images[0].alt="alternate";
+// document.images[0].title="picture";
+// document.images[0].id="pic";
+// document.images[0].className="img";
 
-let myLink = document.querySelector(".link");
-console.log(myLink.getAttribute("class"));
-console.log(myLink.getAttribute("href"));
+// let myLink = document.querySelector(".link");
+// console.log(myLink.getAttribute("class"));
+// console.log(myLink.getAttribute("href"));
+
+console.log(document.getElementsByTagName("p")[0].attributes);
+let myp= document.getElementsByTagName("p")[0];
+if (myp.hasAttribute("data-src")){
+if(myp.getAttribute("data-src")=== ""){
+    myp.removeAttribute("data-src")
+} else{
+    myp.setAttribute("data-src","da3douchi")
+}
+   
+} else{
+    console.log("not found");
+}
+
+
+
+
+
+
 
 
