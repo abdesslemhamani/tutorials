@@ -71,5 +71,9 @@
 
 let myIdelement = document.getElementById("my-div");
 let mytagelements = document.getElementsByTagName("p");
+let myclasselement = document.getElementsByClassName("my-span");
+let myQueryelement = document.querySelectorAll(".my-span")
 console.log(myIdelement)
-console.log(mytagelements)
+console.log(mytagelements[1])
+console.log(myclasselement[1])
+console.log(myQueryelement[1])
