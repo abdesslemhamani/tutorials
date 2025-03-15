@@ -69,11 +69,34 @@
 
 //tuturial
 
-let myIdelement = document.getElementById("my-div");
-let mytagelements = document.getElementsByTagName("p");
-let myclasselement = document.getElementsByClassName("my-span");
-let myQueryelement = document.querySelectorAll(".my-span")
-console.log(myIdelement)
-console.log(mytagelements[1])
-console.log(myclasselement[1])
-console.log(myQueryelement[1])
+// let myIdelement = document.getElementById("my-div");
+// let mytagelements = document.getElementsByTagName("p");
+// let myclasselement = document.getElementsByClassName("my-span");
+// let myQueryelement = document.querySelectorAll(".my-span")
+// console.log(myIdelement)
+// console.log(mytagelements[1])
+// console.log(myclasselement[1])
+// console.log(myQueryelement[1])
+
+//tuturial 2
+let myElement = document.querySelector(".js");
+console.log(myElement.innerHTML);
+console.log(myElement.textContent);
+
+
+myElement.innerHTML = "text form <span> main.js</span> file"
+myElement.textContent = "text form <span> main.js</span> file"
+
+
+
+document.images[0].src= "https://google.com";
+document.images[0].alt="alternate";
+document.images[0].title="picture";
+document.images[0].id="pic";
+document.images[0].className="img";
+
+let myLink = document.querySelector(".link");
+console.log(myLink.getAttribute("class"));
+console.log(myLink.getAttribute("href"));
+
+
