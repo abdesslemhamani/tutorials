@@ -138,26 +138,31 @@
 
 
 
-let myElement = document.createElement("div");
-let par = document.createElement("p");
-let hiding=document.createElement("h2");
-let mytext=document.createTextNode("paragraph is here");
-let hidding=document.createTextNode("here hidding");
+// let myElement = document.createElement("div");
+// let par = document.createElement("p");
+// let hiding=document.createElement("h2");
+// let mytext=document.createTextNode("paragraph is here");
+// let hidding=document.createTextNode("here hidding");
 
-hiding.appendChild(hidding);
+// hiding.appendChild(hidding);
 
-myElement.appendChild(hiding)
+// myElement.appendChild(hiding)
 
-par.appendChild(mytext);
+// par.appendChild(mytext);
 
-myElement.appendChild(par);
+// myElement.appendChild(par);
 
-myElement.className="product";
+// myElement.className="product";
 
-document.body.appendChild(myElement);
+// document.body.appendChild(myElement);
 
 
 
+let myElement=document.querySelector("div");
+
+console.log(myElement);
+console.log(myElement.children);
+console.log(myElement.childNodes);
 
 
 
