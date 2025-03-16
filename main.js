@@ -99,30 +99,41 @@
 // console.log(myLink.getAttribute("class"));
 // console.log(myLink.getAttribute("href"));
 
-console.log(document.getElementsByTagName("p")[0].attributes);
-let myp= document.getElementsByTagName("p")[0];
-if (myp.hasAttribute("data-src")){
-if(myp.getAttribute("data-src")=== ""){
-    myp.removeAttribute("data-src")
-} else{
-    myp.setAttribute("data-src","da3douchi")
-}
+// console.log(document.getElementsByTagName("p")[0].attributes);
+// let myp= document.getElementsByTagName("p")[0];
+// if (myp.hasAttribute("data-src")){
+// if(myp.getAttribute("data-src")=== ""){
+//     myp.removeAttribute("data-src")
+// } else{
+//     myp.setAttribute("data-src","da3douchi")
+// }
    
-} else{
-    console.log("not found");
-}
+// } else{
+//     console.log("not found");
+// }
 
-if (myp.hasAttributes()){
-console.log("has atributes");
-}
-if (document.getElementsByTagName("div")[0].hasAttribute("")){
-    console.log ("has atributes")
-}else{
-    console.log("div has no attribute")
-}
+// if (myp.hasAttributes()){
+// console.log("has atributes");
+// }
+// if (document.getElementsByTagName("div")[0].hasAttribute("")){
+//     console.log ("has atributes")
+// }else{
+//     console.log("div has no attribute")
+// }
 
 
+//toturial 3
+let myElement=document.createElement("div");
+let myattr=document.createAttribute("data-custom");
+let myText=document.createTextNode("product one");
 
+myElement.className="product";
+myElement.setAttributeNode(myattr);
+myElement.setAttribute("data-test","testing");
+
+myElement.appendChild(myText);
+
+document.body.appendChild(myElement)
 
 
 
