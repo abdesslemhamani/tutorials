@@ -112,7 +112,14 @@ if(myp.getAttribute("data-src")=== ""){
     console.log("not found");
 }
 
-
+if (myp.hasAttributes()){
+console.log("has atributes");
+}
+if (document.getElementsByTagName("div")[0].hasAttribute("")){
+    console.log ("has atributes")
+}else{
+    console.log("div has no attribute")
+}
 
 
 
