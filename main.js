@@ -123,17 +123,44 @@
 
 
 //toturial 3
-let myElement=document.createElement("div");
-let myattr=document.createAttribute("data-custom");
-let myText=document.createTextNode("product one");
+//creat element
+// let myElement=document.createElement("div");
+// let myattr=document.createAttribute("data-custom");
+// let myText=document.createTextNode("product one");
+
+// myElement.className="product";
+// myElement.setAttributeNode(myattr);
+// myElement.setAttribute("data-test","testing");
+
+// myElement.appendChild(myText);
+
+// document.body.appendChild(myElement)
+
+
+
+let myElement = document.createElement("div");
+let par = document.createElement("p");
+let hiding=document.createElement("h2");
+let mytext=document.createTextNode("paragraph is here");
+let hidding=document.createTextNode("here hidding");
+
+hiding.appendChild(hidding);
+
+myElement.appendChild(hiding)
+
+par.appendChild(mytext);
+
+myElement.appendChild(par);
 
 myElement.className="product";
-myElement.setAttributeNode(myattr);
-myElement.setAttribute("data-test","testing");
 
-myElement.appendChild(myText);
+document.body.appendChild(myElement);
 
-document.body.appendChild(myElement)
+
+
+
+
+
 
 
 
